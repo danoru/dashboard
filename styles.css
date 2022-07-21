@@ -6,3 +6,39 @@
 body {
   background-color: purple;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  height: 100vh;
+}
+
+.header-and-body-container {
+  display: grid;
+  grid-template-rows: 15% 85%;
+}
+
+.header-content {
+  background-color: white;
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+
+.header-top-content {
+  display: grid;
+  grid-template-columns: 70% 10% 10% 10%;
+}
+
+.header-bottom-content {
+  display: grid;
+  grid-template-columns: 10% 60% 10% 10% 10%;
+}
+
+.header-greeting {
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+
+.sidebar {
+  background-color: orange;
+}
