@@ -4,13 +4,21 @@
 }
 
 body {
-  background-color: purple;
+  background-color: grey;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 10% 90%;
+  grid-template-columns: 15% 85%;
   height: 100vh;
+}
+
+.sidebar {
+  background-color: royalblue;
+  color: white;
+  display: grid;
+  grid-template-rows: 60px 200px 100px;
 }
 
 .header-and-body-container {
@@ -34,11 +42,42 @@ body {
   grid-template-columns: 10% 60% 10% 10% 10%;
 }
 
-.header-greeting {
-  display: grid;
-  grid-template-rows: 50% 50%;
+button {
+  background-color: royalblue;
+  border-radius: 20px;
+  color: white;
+  height: 30px;
+  width: 80px;
 }
 
-.sidebar {
-  background-color: orange;
+.header-greeting {
+  display: grid;
+  grid-template-rows: 30% 70%;
+}
+
+.body-content {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.projects-content {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-template-rows: 8% 25% 25% 25%;
+  gap: 20px;
+}
+
+.projects-title {
+  grid-column: 1 / -1;
+}
+
+.projects-content > div {
+  background-color: white;
+  border-radius: 5px;
+  border-left: 10px solid orange;
+}
+
+.notices-container {
+ display: grid;
+ grid-template-rows: 50% 50%;
 }
